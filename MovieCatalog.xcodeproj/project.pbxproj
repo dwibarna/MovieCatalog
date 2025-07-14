@@ -195,6 +195,10 @@
 			);
 			mainGroup = 56A90D862E24A0E400183DA4;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				56A90DD22E24E88900183DA4 /* XCRemoteSwiftPackageReference "Swinject" */,
+				56A90DD32E24E8AC00183DA4 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 56A90D902E24A0E400183DA4 /* Products */;
 			projectDirPath = "";
@@ -550,6 +554,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		56A90DD22E24E88900183DA4 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.9.1;
+			};
+		};
+		56A90DD32E24E8AC00183DA4 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 56A90D872E24A0E400183DA4 /* Project object */;
 }
