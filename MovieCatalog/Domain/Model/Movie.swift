@@ -10,10 +10,10 @@ struct Movie: Codable, Identifiable {
     let id: Int
     let title: String
     let overview: String
-    let poster_path: String?
+    let posterPath: String?
     
     var posterURL: URL? {
-        guard let path = poster_path else { return nil }
+        guard let path = posterPath else { return nil }
         return URL(string: "https://image.tmdb.org/t/p/w500\(path)")
     }
 }

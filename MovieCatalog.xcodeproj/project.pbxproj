@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		56A90DF02E24ECBD00183DA4 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 56A90DEF2E24ECBD00183DA4 /* Alamofire */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		56A90DA22E24A0E600183DA4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56A90DF02E24ECBD00183DA4 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 				56A90D912E24A0E400183DA4 /* MovieCatalog */,
 				56A90DA42E24A0E600183DA4 /* MovieCatalogTests */,
 				56A90DAE2E24A0E600183DA4 /* MovieCatalogUITests */,
+				56A90DEE2E24ECBD00183DA4 /* Frameworks */,
 				56A90D902E24A0E400183DA4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +96,13 @@
 				56A90DAB2E24A0E600183DA4 /* MovieCatalogUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		56A90DEE2E24ECBD00183DA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +125,7 @@
 			);
 			name = MovieCatalog;
 			packageProductDependencies = (
+				56A90DEF2E24ECBD00183DA4 /* Alamofire */,
 			);
 			productName = MovieCatalog;
 			productReference = 56A90D8F2E24A0E400183DA4 /* MovieCatalog.app */;
@@ -573,6 +587,14 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		56A90DEF2E24ECBD00183DA4 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 56A90DD32E24E8AC00183DA4 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 56A90D872E24A0E400183DA4 /* Project object */;
 }
