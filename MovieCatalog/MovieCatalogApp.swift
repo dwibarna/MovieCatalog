@@ -13,8 +13,14 @@ struct MovieCatalogApp: App {
 
     var body: some Scene {
         WindowGroup {
+            
+            let container = AppContainer.shared.container
+            let useCase = container.resolve(GetPopularMoviesUseCase.self)!
+            let viewModel = MovieViewModel(getPopularMovieUseCase: useCase)
+            
             ContentView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environmentObject(viewModel)
         }
     }
 }

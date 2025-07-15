@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		56A90DF02E24ECBD00183DA4 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 56A90DEF2E24ECBD00183DA4 /* Alamofire */; };
+		56A90DF82E24EE6600183DA4 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 56A90DF72E24EE6600183DA4 /* Swinject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				56A90DF02E24ECBD00183DA4 /* Alamofire in Frameworks */,
+				56A90DF82E24EE6600183DA4 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +128,7 @@
 			name = MovieCatalog;
 			packageProductDependencies = (
 				56A90DEF2E24ECBD00183DA4 /* Alamofire */,
+				56A90DF72E24EE6600183DA4 /* Swinject */,
 			);
 			productName = MovieCatalog;
 			productReference = 56A90D8F2E24A0E400183DA4 /* MovieCatalog.app */;
@@ -593,6 +596,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 56A90DD32E24E8AC00183DA4 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		56A90DF72E24EE6600183DA4 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 56A90DD22E24E88900183DA4 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
