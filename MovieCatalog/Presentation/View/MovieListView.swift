@@ -20,25 +20,27 @@ struct MovieListView: View {
                         .foregroundColor(.red)
                 } else {
                     List(viewModel.movies) { movie in
-                        HStack(alignment: .top, spacing: 16) {
-                            AsyncImage(url: URL(string: "https://image.tmdb.org/t/p/w200\(movie.posterPath ?? "")")) { image in
-                                image.resizable()
-                            } placeholder: {
-                                ProgressView()
-                            }
-                            .frame(width: 80, height: 120)
-                            .cornerRadius(8)
+                        NavigationLink(destination: MovieDetailView(movie: movie)) {
+                            HStack(alignment: .top, spacing: 16) {
+                                AsyncImage(url: URL(string: "https://image.tmdb.org/t/p/w200\(movie.posterPath ?? "")")) { image in
+                                    image.resizable()
+                                } placeholder: {
+                                    ProgressView()
+                                }
+                                .frame(width: 80, height: 120)
+                                .cornerRadius(8)
 
-                            VStack(alignment: .leading, spacing: 8) {
-                                Text(movie.title)
-                                    .font(.headline)
-                                Text(movie.overview)
-                                    .font(.subheadline)
-                                    .lineLimit(3)
-                                    .foregroundColor(.secondary)
+                                VStack(alignment: .leading, spacing: 8) {
+                                    Text(movie.title)
+                                        .font(.headline)
+                                    Text(movie.overview)
+                                        .font(.subheadline)
+                                        .lineLimit(3)
+                                        .foregroundColor(.secondary)
+                                }
                             }
+                            .padding(.vertical, 8)
                         }
-                        .padding(.vertical, 8)
                     }
                 }
             }
