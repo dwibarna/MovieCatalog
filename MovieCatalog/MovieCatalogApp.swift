@@ -18,7 +18,7 @@ struct MovieCatalogApp: App {
             let useCase = container.resolve(GetPopularMoviesUseCase.self)!
             let viewModel = MovieViewModel(getPopularMovieUseCase: useCase)
             
-            ContentView()
+            MovieListView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
                 .environmentObject(viewModel)
         }
