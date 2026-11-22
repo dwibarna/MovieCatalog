@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct MovieCatalogApp: App {
-    let persistenceController = PersistenceController.shared
+    let coreDataStack = CoreDataStack.shared
 
     var body: some Scene {
         WindowGroup {
@@ -19,7 +19,7 @@ struct MovieCatalogApp: App {
             let viewModel = MovieViewModel(getPopularMovieUseCase: useCase)
             
             MovieListView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environment(\.managedObjectContext, coreDataStack.context)
                 .environmentObject(viewModel)
         }
     }

@@ -53,5 +53,8 @@ struct MovieListView: View {
 }
 
 #Preview {
-    MovieListView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+    let useCase = AppContainer.shared.container.resolve(GetPopularMoviesUseCase.self)!
+    MovieListView()
+        .environment(\.managedObjectContext, CoreDataStack.shared.context)
+        .environmentObject(MovieViewModel(getPopularMovieUseCase: useCase))
 }
